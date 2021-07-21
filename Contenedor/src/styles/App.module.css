@@ -1,0 +1,9 @@
+.container {
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.wrapper {
+  margin: 0 13rem;
+  padding: 0 3rem;
+}
