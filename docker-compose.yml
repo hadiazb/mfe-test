@@ -1,0 +1,42 @@
+version: '3.4'
+services:
+  contenedor:
+    build: ./Contenedor
+    ports:
+      - '8000:8000'
+    depends_on:
+      - header
+      - footer
+      - error404
+      - home
+      - contactenos
+      - ayuda
+      - breadcrumb
+  header:
+    build: ./Header
+    ports:
+      - '8001:8001'
+  footer:
+    build: ./Footer
+    ports:
+      - '8002:8002'
+  error404:
+    build: ./Error404
+    ports:
+      - '8003:8003'
+  home:
+    build: ./Home
+    ports:
+      - '8004:8004'
+  contactenos:
+    build: ./Contactenos
+    ports:
+      - '8005:8005'
+  ayuda:
+    build: ./Ayuda
+    ports:
+      - '8006:8006'
+  breadcrumb:
+    build: ./Breadcrumb
+    ports:
+      - '8007:8007'
